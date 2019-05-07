@@ -8,7 +8,7 @@
     "build:presentation": "mdx-deck build deck.mdx --no-html",
     "build:images": "cp -r images dist/",
     "now-build": "npm run build:presentation && npm run build:images",
-    "deploy": "now"
+    "deploy": "now --target staging"
   },
   "devDependencies": {
     "mdx-deck": "^2.3.2"
